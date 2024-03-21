@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transistion Assignment 2</title>
+    <link rel="stylesheet" href="../assets/normalize.css">
+    <style>
+        body{
+            background-color: deepskyblue;
+        }
+        section>div{
+            position: absolute;
+            height: 280px;
+
+            aspect-ratio: 1/1;
+
+            background-color: grey;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+
+            border-radius: 100%;
+        }
+
+        h1{
+            width: fit-content;
+            height: fit-content;
+
+            color: white;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+        div::before{
+            content: "";
+            border:10px solid white;
+            border-top-color: red;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+
+            border-radius: 100%;
+
+            transition-duration: 2s;
+        }
+        div:hover::before{
+            transform: rotate(360deg);
+            transition-duration: 2s;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div>
+        <h1>RWAD</h1>
+    </div>
+</section>
+</body>
+</html>

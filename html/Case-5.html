@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment case 3</title>
+</head>
+<style>
+    main{
+        width: 50vw;
+        height: 50vh;
+
+        border : 2px solid red;
+
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        margin: auto;
+
+
+
+        overflow: hidden;
+
+        animation: amime 3s linear ;
+    }
+    section{
+        width: 200vw;
+        display: flex;
+
+        animation: 10s anime linear  infinite;
+    }
+    main>section>div:first-child{
+        width: 50vw;
+        height: 50vh;
+
+        background-image: url("../assets/img/slide1.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    main>section>div:nth-child(2){
+        width: 50vw;
+        height: 50vh;
+        background-image: url("../assets/img/slide2.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    main>section>div:nth-child(3){
+        width: 50vw;
+        height: 50vh;
+        background-image: url("../assets/img/slide3.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    main>section>div:last-child{
+        width: 50vw;
+        height: 50vh;
+        background-image: url("../assets/img/slide4.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    @keyframes anime {
+        0%,20%{
+            transform: translateX(0%);
+        }
+        25%,45%{
+            transform: translateX(-25%);
+        }
+        50%,70%{
+            transform: translateX(-50%);
+        }
+        75%{
+            transform: translateX(-75%);
+        }
+    }
+</style>
+<body>
+    <main>
+        <section>
+            <div id="div1"></div>
+            <div id="div2"></div>
+            <div id="div3"></div>
+            <div id="div4"></div>
+        </section>
+
+    </main>
+</body>
+</html>
